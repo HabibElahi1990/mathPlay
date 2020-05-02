@@ -1,4 +1,6 @@
-public class ResultGame {
+import java.util.Comparator;
+
+public class ResultGame implements Comparable<ResultGame> {
     private String name;
     private String time;
     private Integer right;
@@ -48,11 +50,16 @@ public class ResultGame {
 
     @Override
     public String toString() {
-        return "ResultGame{" +
-                "name='" + name + '\'' +
-                ", time='" + time + '\'' +
+        return "name=" + name +
+                ", time=" + time+
                 ", right=" + right +
-                ", wrongs=" + wrongs +
-                '}';
+                ", wrongs=" + wrongs ;
     }
+
+
+    @Override
+    public int compareTo(ResultGame o) {
+        return o.getRight();
+    }
+
 }

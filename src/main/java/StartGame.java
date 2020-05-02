@@ -8,8 +8,8 @@ import java.util.*;
 public class StartGame {
 
     public static void getNum(Scanner scanner, String name) {
-        List<Integer> wrongIntegers = new ArrayList<Integer>(10);
-        List<Integer> rightIntegers = new ArrayList<Integer>(10);
+        List<Integer> wrongIntegers = new ArrayList<Integer>(5);
+        List<Integer> rightIntegers = new ArrayList<Integer>(5);
         Random random = new Random();
         int i = 0;
         Instant startTime = Instant.now();
@@ -23,8 +23,8 @@ public class StartGame {
                 int result = scanner.nextInt();
                 if (sum != result) {
                     try {
-                        throw new MathExeption("Wrong!");
-                    } catch (MathExeption mathExeption) {
+                        throw new MathException("Wrong!");
+                    } catch (MathException mathExeption) {
                         wrongIntegers.add(1);
                     }
                 } else {
@@ -38,8 +38,8 @@ public class StartGame {
                 int result = scanner.nextInt();
                 if (minus != result) {
                     try {
-                        throw new MathExeption("Wrong!");
-                    } catch (MathExeption mathExeption) {
+                        throw new MathException("Wrong!");
+                    } catch (MathException mathExeption) {
                         wrongIntegers.add(1);
                     }
                 } else {
