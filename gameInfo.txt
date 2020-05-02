@@ -1,0 +1,3 @@
+[
+, R, e, s, u, l, t, G, a, m, e, {, n, a, m, e, =, ', H, a, b, i, b, ', ,,  , t, i, m, e, =, ', 0, :, 3, ', ,,  , r, i, g, h, t, =, 0, ,,  , w, r, o, n, g, s, =, 1, 0, }]
+ResultGame{name='Habib', time='0:9', right=1, wrongs=9}
